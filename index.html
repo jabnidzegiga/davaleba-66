@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        table, th, td, tr {
+            border: 1px solid #ddd;
+            text-align: center;
+            border-collapse: collapse;
+            padding: 10px 10px;
+            font-size: 15px;
+        }
+
+        body {
+            font-family: "inter";
+        }
+
+        button {
+            font-size: 15px;
+            font-family: "inter";
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="box">
+                <h1 class="search-heading">Search</h1>
+
+            <div class="search-box">
+        
+                <div class="id-box">
+                    <label for="id">ID</label>
+                    <br>
+                    <input type="number" name="id" id="id" placeholder="ID">
+                </div>
+
+                <div class="title-box">
+                    <label for="title">Title</label>
+                    <br>
+                    <input type="text" name="title" id="title" placeholder="Title">
+                </div>
+
+                <div class="date-box">
+                    <label for="date">Created at</label>
+                    <br>
+                    <input type="text" name="date" id="date" placeholder="Created at" onfocus="this.type='date'" onblur="this.type='text'">
+                </div>
+
+                <div class="action-button">
+                    <label for="action">Action</label>
+                    <br>
+                    <button class="search-button">Search</button>
+                </div>
+            </div>
+            
+            <h1>News Table</h1>
+
+            <div class="news-box">
+                <table class="news-table">
+                    <thead>
+                        <tr class="heading">
+                            <th class="id">ID</th>
+                            <th class="title">Title</th>
+                            <th class="created-at">Created at</th>
+                            <th class="action">Action</th>
+                            <th class="action">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="id-data">1</td>
+                            <td class="title-data">Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+                            <td class="date-data">2021/12/01</td>
+                            <td><button class="edit-button">Edit</button></td>
+                            <td><button class="edit-button2">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td class="id-data">2</td>
+                            <td class="title-data">Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+                            <td class="date-data">2021/12/01</td>
+                            <td><button class="edit-button">Edit</button></td>
+                            <td><button class="edit-button2">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td class="id-data">3</td>
+                            <td class="title-data">Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+                            <td class="date-data">2021/12/01</td>
+                            <td><button class="edit-button">Edit</button></td>
+                            <td><button class="edit-button2">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td class="id-data">4</td>
+                            <td class="title-data">Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+                            <td class="date-data">2021/12/01</td>
+                            <td><button class="edit-button">Edit</button></td>
+                            <td><button class="edit-button2">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td class="id-data">5</td>
+                            <td class="title-data">Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+                            <td class="date-data">2021/12/01</td>
+                            <td><button class="edit-button">Edit</button></td>
+                            <td><button class="edit-button2">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td class="id-data">6</td>
+                            <td class="title-data">Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+                            <td class="date-data">2021/12/01</td>
+                            <td><button class="edit-button">Edit</button></td>
+                            <td><button class="edit-button2">Edit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</body>
+</html>
